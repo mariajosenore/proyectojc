@@ -1,14 +1,81 @@
 # angular
-<ul class="nav navbar-nav">
-  <li>
-    <a (click)="goToHome()">Home</a>
-  </li>
-  <li>
-    <a (click)="goToAbout()">About</a>
-  </li>
-  <li>
-    <a (click)="goToServices()">Services</a>
-  </li>
-</ul>
+
+<style>
+  
+  .spacer {
+    flex: 1;
+  }
+
+  
+  .toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #000501;
+    color: white;
+    font-weight: 600;
+  }
+  banner_color {
+    padding: 10px 20px; background-color: #19e373; color: #19e373; border: none; border-radius: 5px; cursor: pointer;
+  }
+
+
+  banner_color:hover {
+    padding: 10px 20px; background-color: #17db93; color: white; border: none; border-radius: 5px; cursor: pointer;
+  }
+</style>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+</head>
+
+<body style="margin: 0; height: 100vh;">
+<!-- Toolbar -->
+<div class="toolbar" role="banner" >
+  <img
+    width="40"
+    alt="Logo Pagina JC"
+    src="assets/image/logopaginajc.png"
+    style="background-color: #000501;"
+  />
+ 
+  <div style="margin-left: 16px;">
+    <span> Herencia y Sazón de Silvia </span>
+  </div>
+  <div class="spacer"></div>
+  <div style="display: flex; gap: 10px; margin-left: 16px;">
+    <button class="banner_color" (click)="goToHome()">Home</button>
+    <button class="banner_color" (click)="goToServices()">Conoce Silvia</button>
+    <button class="banner_color" (click)="goToAbout()">Información Personal</button>
+    <button class="banner_color" (click)="goToAbout()">Lugares turisticos</button>
+  </div>
+</div>
+
+<!-- <style>
+  .toolbar button:hover {
+    background-color: #17db93;
+  }
+</style> -->
 
 <router-outlet> </router-outlet>
+
+    <!-- Footer -->
+    <footer style="background-color: #000501; color: white; padding: 10px; width: 100%; text-align: center; position: fixed; bottom: 0px;">
+      <a href="https://jovenes.tocaunavida.org/" target="_blank" rel="noopener" style="color: white; display: inline-block; margin-right: 10px;">
+        plataforma desarrollada dentro del marco del programa jovenes creativos el cual habla de la variedad de emprendimientos y tradiciones de Silvia Cauca.
+  
+      </a>
+    </footer>
+
+
+</body>
+
+</html>
