@@ -15,7 +15,10 @@ export class AppComponent {
   goToAbout() {
     this.router.navigate(['/', 'about']);
   }
-  goToServices() {
-    this.router.navigate(['/', 'services']);
+  goToSilvia() {
+    this.router.navigate(['/', 'conoce_silvia']);
+  }
+  goToLugares() {
+    this.router.navigate(['/', 'lugares_turisticos']);
   }
 }
