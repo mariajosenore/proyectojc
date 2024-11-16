@@ -21,4 +21,10 @@ export class AppComponent {
   goToLugares() {
     this.router.navigate(['/', 'lugares_turisticos']);
   }
+  goToLogin() {
+    this.router.navigate(['/', 'ingresar']);
+  }
+  goToRegister() {
+    this.router.navigate(['/', 'registrarse']);
+  }
 }

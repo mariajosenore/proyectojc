@@ -5,6 +5,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
 import { SilviaComponent } from './pages/silvia/silvia.component';
 import { LugaresComponent } from './pages/lugares/lugares.component';
+import { LoginComponent } from './pages/login/login.component';
+import { RegisterComponent } from './pages/register/register.component';
 
 
 const routes: Routes = [
@@ -14,7 +16,9 @@ const routes: Routes = [
   //{ path: '**', redirectTo: '/home' },
   { path: 'about', component: AboutComponent},
   { path: 'conoce_silvia', component: SilviaComponent},
-  { path: 'lugares_turisticos', component: LugaresComponent}
+  { path: 'lugares_turisticos', component: LugaresComponent},
+  { path: 'ingresar', component: LoginComponent},
+  { path: 'registrarse', component: RegisterComponent},
 
 ];
 
