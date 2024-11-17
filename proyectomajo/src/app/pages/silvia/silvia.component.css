@@ -74,3 +74,81 @@
     font-size: 2em;
     margin-bottom: 1rem;
 }
+
+
+
+.silvia-10 {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.silvia-11 {
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.silvia-12 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000, 2px 2px 4px #FF0000, 2px 2px 4px #00FF00, 2px 2px 4px #0000FF;
+    font-size: 2em;
+}
+
+
+
+.silvia-13 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+
+
+
+.silvia-14 {
+    flex: 1 1 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+
+
+.silvia-15 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+
+.silvia-16 {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 20px;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+}
+
+
+
+.silvia-17 {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}
