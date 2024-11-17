@@ -1,0 +1,76 @@
+.silvia-1 {
+    background-color: black;
+}
+
+
+
+.silvia-2 {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+
+.silvia-3 {
+    color: white;
+    text-shadow: 2px 2px 4px #000000, 2px 2px 4px #FF0000, 2px 2px 4px #00FF00, 2px 2px 4px #0000FF;
+    font-size: 3em;
+}
+
+
+
+.silvia-4 {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+
+.silvia-5 {
+    color: black;
+    max-width: 1000px;
+    font-size: 1.5em;
+}
+
+
+
+.silvia-6 {
+    color: black;
+    max-width: 1000px;
+    font-size: 1.5em;
+    text-align: justify;
+}
+
+
+
+.silvia-7 {
+    margin: 0px;
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 20px;
+    background-color: black;
+}
+
+
+
+.silvia-8 {
+    text-align: center;
+}
+
+
+
+.silvia-9 {
+    color: white;
+    font-size: 2em;
+    margin-bottom: 1rem;
+}

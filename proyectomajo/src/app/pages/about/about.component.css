@@ -1,0 +1,86 @@
+.aboutmj-1 {
+    display: flex;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.about-2 {
+    background-color: #17db93;
+    padding: 30px 90px;
+    height: auto;
+}
+
+.about-3 {
+
+    text-shadow: 2px 2px 4px #ffffff;
+}
+
+.about-4 {
+
+    width: 25%;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 6rem;
+    right: 2rem;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1;
+
+}
+
+.about-5 {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about-6 {
+    width: 20%;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.6);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-7 {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 2;
+}
+
+.about-8 {
+    background-color: #ffffff;
+    padding: 30px 90px;
+    height: auto;
+}
+
+.about-9 {
+    display: flex;
+    padding: 20px;
+    font-weight: normal;
+
+}
+
+.about-10 {
+    flex: 1;
+    text-align: center;
+    background-color: black;
+    margin-right: 10px;
+    padding: 20px;
+    border-radius: 30px;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.about-11 {
+    color: #ffffff;
+}
+
+
+
