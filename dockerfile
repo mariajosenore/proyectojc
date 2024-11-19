@@ -1,37 +1,27 @@
-# Dockerfile
+# Step 1: Build the Angular application
+FROM node:18 AS build
 
-# Stage 1: Build the Angular app
-FROM node:20-alpine as build-angular
-
-# Set the working directory for the build
-WORKDIR /build
-
-# Copy package.json and package-lock.json to leverage Docker cache for npm install
-COPY package*.json ./
-
-# Install the dependencies
-RUN npm install
-
-# Copy the source code for the Angular app to the build directory
-COPY . .
-
-# Build the Angular app
-RUN npm run build
-
-# Stage 2: Create the final image
-FROM caddy:latest
-
-# Set the working directory for the final container
+# Set the working directory
 WORKDIR /app
 
-# Copy the Angular build output to the final location
-COPY --from=build-angular /build/dist/proyectojc ./www
+# Install dependencies
+COPY package.json package-lock.json ./
+RUN npm install
 
-# Copy the Caddyfile to the final location
-COPY ./Caddyfile /etc/caddy/Caddyfile
+# Copy the application source code
+COPY . .
 
-# Expose the port for Caddy
+# Build the Angular application for production
+RUN npm run build --prod
+
+# Step 2: Serve the application with a lightweight web server (e.g., nginx)
+FROM nginx:alpine
+
+# Copy the built Angular app from the previous stage
+COPY --from=build /app/dist/your-angular-app /usr/share/nginx/html
+
+# Expose the port that nginx will listen on
 EXPOSE 80
 
-# Command to start Caddy
-CMD ["caddy", "run", "--config", "/etc/caddy/Caddyfile"]
+# Start nginx server
+CMD ["nginx", "-g", "daemon off;"]

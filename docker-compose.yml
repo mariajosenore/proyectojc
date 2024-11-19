@@ -1,13 +1,8 @@
+version: '3.8'
+
 services:
-  my-containerized-angular-app-example:
-    # Build the Docker image using the Dockerfile in the current directory
-    build:
-      context: .
-
-    # Map port 80 in the container to port 3000 on the host machine
+  angular-app:
+    build: .
     ports:
-      - "3000:80"
-
-    # Load environment variables from the .env file
-    # env_file:
-    #   - .env
+      - "80:80"
+    container_name: angular-app

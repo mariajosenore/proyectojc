@@ -4,3 +4,4 @@ ng generate service hero
 Proyecto Final Jovenes Creativos
 cd proyectomajo
 npm start
+docker-compose up --build
