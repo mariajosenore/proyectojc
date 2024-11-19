@@ -18,7 +18,7 @@ RUN npm run build --prod
 FROM nginx:alpine
 
 # Copy the built Angular app from the previous stage
-COPY --from=build /app/dist/your-angular-app /usr/share/nginx/html
+COPY --from=build /app/dist/proyectomajo /usr/share/nginx/html
 
 # Expose the port that nginx will listen on
 EXPOSE 80
